@@ -8,27 +8,27 @@
    -------------------------------------------------------------------------- */
 
 :root {
-  /* Colors - Dark theme with vibrant accents */
-  --color-bg: #0a0a0f;
-  --color-bg-secondary: #12121a;
-  --color-bg-tertiary: #1a1a24;
-  --color-bg-card: #16161f;
-  --color-bg-card-hover: #1e1e2a;
+  /* Colors - Mountain/Adventure Scouting Theme */
+  --color-bg: #1a1510;
+  --color-bg-secondary: #2a221a;
+  --color-bg-tertiary: #3a3025;
+  --color-bg-card: #2d251c;
+  --color-bg-card-hover: #3a3025;
   
-  --color-text: #e4e4e7;
-  --color-text-muted: #a1a1aa;
-  --color-text-subtle: #71717a;
+  --color-text: #f5f0e6;
+  --color-text-muted: #c9bda5;
+  --color-text-subtle: #9a8b6e;
   
-  --color-border: #27272a;
-  --color-border-subtle: #1f1f23;
+  --color-border: #4a3728;
+  --color-border-subtle: #3a2a1c;
   
   /* Accent gradient */
-  --color-primary: #8b5cf6;
-  --color-primary-light: #a78bfa;
-  --color-secondary: #06b6d4;
-  --gradient-primary: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
-  --gradient-text: linear-gradient(135deg, #c084fc 0%, #22d3ee 50%, #a78bfa 100%);
-  --gradient-glow: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+  --color-primary: #e07000;
+  --color-primary-light: #ff9030;
+  --color-secondary: #5bc2e7;
+  --gradient-primary: linear-gradient(135deg, #e07000 0%, #ffb347 100%);
+  --gradient-text: linear-gradient(135deg, #e07000 0%, #ffb347 50%, #5bc2e7 100%);
+  --gradient-glow: linear-gradient(135deg, rgba(224, 112, 0, 0.15) 0%, rgba(91, 194, 231, 0.15) 100%);
   
   /* Status colors */
   --color-success: #22c55e;
@@ -37,6 +37,7 @@
   
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Roboto Slab', Georgia, 'Times New Roman', serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -145,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--line-height-tight);
   font-weight: 600;
   color: var(--color-text);
+  font-family: var(--font-serif);
 }
 
 p {
