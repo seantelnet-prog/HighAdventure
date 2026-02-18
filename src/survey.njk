@@ -11,57 +11,177 @@ description: Tell us where you want to go! Help shape Troop 69's high adventure 
 
 <section class="overview">
   <h2>Take the Survey</h2>
-  <p>Print this page or copy the questions into your preferred format. Submit completed surveys to the Scoutmaster or high adventure coordinator.</p>
 
-  <div class="faq">
-    <div class="faq-item">
-      <h3>1. Grade Level</h3>
-      <p>☐ 7th ☐ 8th ☐ 9th ☐ 10th ☐ 11th ☐ 12th</p>
+  <form action="https://formspree.io/f/xgolzpkn" method="POST" class="survey-form">
+    <input type="hidden" name="_next" value="/survey/thanks">
+    <input type="hidden" name="_subject" value="New High Adventure Survey Response">
+
+    <div class="form-group">
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required>
     </div>
 
-    <div class="faq-item">
-      <h3>2. When would you like to go?</h3>
-      <p>☐ Summer 2026 ☐ Summer 2027 ☐ Summer 2028 ☐ Summer 2029+ ☐ Fall/Spring break</p>
+    <div class="form-group">
+      <label for="email">Email (or parent email) *</label>
+      <input type="email" id="email" name="email" required>
     </div>
 
-    <div class="faq-item">
-      <h3>3. Which activities sound exciting? (Check all that apply)</h3>
-      <p>☐ Backpacking/Hiking ☐ Canoeing/Kayaking ☐ Scuba Diving/Snorkeling ☐ Sailing/Island Camping ☐ Rock Climbing ☐ Mountain Biking ☐ Winter Camping ☐ Horseback Riding ☐ Shooting Sports</p>
+    <div class="form-group">
+      <label for="grade">Grade Level *</label>
+      <select id="grade" name="grade" required>
+        <option value="">Select grade...</option>
+        <option value="7th">7th</option>
+        <option value="8th">8th</option>
+        <option value="9th">9th</option>
+        <option value="10th">10th</option>
+        <option value="11th">11th</option>
+        <option value="12th">12th</option>
+      </select>
     </div>
 
-    <div class="faq-item">
-      <h3>4. Which base would be your #1 choice?</h3>
-      <p>☐ Philmont (New Mexico) ☐ Sea Base (Florida) ☐ Northern Tier (Minnesota) ☐ Summit (West Virginia)</p>
+    <div class="form-group">
+      <label for="timing">When would you like to go on a High Adventure trip? *</label>
+      <select id="timing" name="timing" required>
+        <option value="">Select timing...</option>
+        <option value="Summer 2026">Summer 2026</option>
+        <option value="Summer 2027">Summer 2027</option>
+        <option value="Summer 2028">Summer 2028</option>
+        <option value="Summer 2029+">Summer 2029 or later</option>
+        <option value="Fall/Spring break">Fall/Spring break trips</option>
+      </select>
     </div>
 
-    <div class="faq-item">
-      <h3>5. Current fitness level</h3>
-      <p>☐ I hike/camp regularly ☐ I go on a few trips per year ☐ Some experience, need training ☐ Want to build skills</p>
+    <div class="form-group">
+      <label>Which activities sound exciting? (Check all that apply)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="activities" value="Backpacking/Hiking"> Backpacking/Hiking</label>
+        <label><input type="checkbox" name="activities" value="Canoeing/Kayaking"> Canoeing/Kayaking</label>
+        <label><input type="checkbox" name="activities" value="Scuba Diving/Snorkeling"> Scuba Diving/Snorkeling</label>
+        <label><input type="checkbox" name="activities" value="Sailing/Island Camping"> Sailing/Island Camping</label>
+        <label><input type="checkbox" name="activities" value="Rock Climbing"> Rock Climbing</label>
+        <label><input type="checkbox" name="activities" value="Mountain Biking"> Mountain Biking</label>
+        <label><input type="checkbox" name="activities" value="Winter Camping"> Winter Camping</label>
+        <label><input type="checkbox" name="activities" value="Horseback Riding"> Horseback Riding</label>
+        <label><input type="checkbox" name="activities" value="Shooting Sports"> Shooting Sports</label>
+      </div>
     </div>
 
-    <div class="faq-item">
-      <h3>6. Have you completed any of these?</h3>
-      <p>☐ 50-Mile Hike ☐ Longboat/Canoe Trek ☐ National Youth Leadership Training ☐ Survival Camp</p>
+    <div class="form-group">
+      <label for="base_choice">Which base would be your #1 choice? *</label>
+      <select id="base_choice" name="base_choice" required>
+        <option value="">Select base...</option>
+        <option value="Philmont">Philmont (New Mexico - backpacking)</option>
+        <option value="Sea Base">Sea Base (Florida - scuba/sailing/islands)</option>
+        <option value="Northern Tier">Northern Tier (Minnesota - canoeing)</option>
+        <option value="Summit Bechtel">Summit Bechtel (West Virginia - activity sampler)</option>
+      </select>
     </div>
 
-    <div class="faq-item">
-      <h3>7. What concerns do you have?</h3>
-      <p>☐ Cost/Fundraising ☐ Physical Fitness ☐ Time away ☐ Gear/Equipment ☐ Nothing - I'm ready!</p>
+    <div class="form-group">
+      <label for="fitness">Current fitness level *</label>
+      <select id="fitness" name="fitness" required>
+        <option value="">Select level...</option>
+        <option value="Regular">I hike/camp regularly (weekly/monthly)</option>
+        <option value="Some trips">I go on a few trips per year</option>
+        <option value="Some experience">I have some experience but need more training</option>
+        <option value="Building skills">I want to build my outdoor skills</option>
+      </select>
     </div>
 
-    <div class="faq-item">
-      <h3>8. Would you help plan a trip?</h3>
-      <p>☐ Yes - leadership role ☐ Maybe - tell me more ☐ No - I'll just participate</p>
+    <div class="form-group">
+      <label>Have you completed any of these? (Check all that apply)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="badges" value="50-Mile Hike"> 50-Mile Hike</label>
+        <label><input type="checkbox" name="badges" value="Longboat/Canoe Trek"> Longboat/Canoe Trek</label>
+        <label><input type="checkbox" name="badges" value="NYLT"> National Youth Leadership Training</label>
+        <label><input type="checkbox" name="badges" value="Survival Camp"> Survival Camp</label>
+        <label><input type="checkbox" name="badges" value="None"> None of the above</label>
+      </div>
     </div>
 
-    <div class="faq-item">
-      <h3>9. Other comments or questions</h3>
-      <p>_______________________________________________________</p>
+    <div class="form-group">
+      <label>What concerns do you have? (Check all that apply)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="concerns" value="Cost/Fundraising"> Cost/Fundraising</label>
+        <label><input type="checkbox" name="concerns" value="Physical Fitness"> Physical Fitness</label>
+        <label><input type="checkbox" name="concerns" value="Time away"> Time away</label>
+        <label><input type="checkbox" name="concerns" value="Gear/Equipment"> Gear/Equipment</label>
+        <label><input type="checkbox" name="concerns" value="Medical/Health"> Medical/Health</label>
+        <label><input type="checkbox" name="concerns" value="None"> Nothing - I'm ready!</label>
+      </div>
     </div>
-  </div>
+
+    <div class="form-group">
+      <label for="leadership">Would you be interested in helping plan a trip? *</label>
+      <select id="leadership" name="leadership" required>
+        <option value="">Select option...</option>
+        <option value="Yes">Yes - I'd like a leadership role</option>
+        <option value="Maybe">Maybe - tell me more</option>
+        <option value="No">No - I'll just participate</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Any other comments or questions?</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Tell us anything else we should know..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Survey</button>
+  </form>
 </section>
 
 <section class="cta">
   <h2>Thank You!</h2>
-  <p>Your feedback helps us plan trips you'll love. Surveys due by [DATE].</p>
+  <p>Your feedback helps us plan trips you'll love. We'll be in touch soon!</p>
 </section>
+
+<style>
+  .survey-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .checkbox-group label {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+</style>
