@@ -6,10 +6,35 @@ description: A progressive 3-year high adventure journey. Build skills, leadersh
 
 <section class="hero">
   <h1>Troop 69 High Adventure Program</h1>
-  <p class="lead">Build endurance, wilderness skills, and leadership through a progressive 3-year adventure program.</p>
+  <p class="lead">Build endurance, wilderness skills, and leadership through our progressive 3-year adventure program.</p>
   <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
     <a href="/roadmap" class="btn btn-primary">View the Roadmap →</a>
     <a href="/survey" class="btn btn-secondary">Take the Survey</a>
+  </div>
+</section>
+
+<section class="overview">
+  <div id="countdown-widget" class="countdown-widget">
+    <h2>Next Expedition Countdown</h2>
+    <div class="countdown-timer" id="countdown">
+      <div class="countdown-item">
+        <span class="countdown-value" id="days">--</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="hours">--</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="minutes">--</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="seconds">--</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+    <p class="countdown-subtitle" id="countdown-title">2027 Northern Tier Expedition</p>
   </div>
 </section>
 
@@ -18,32 +43,79 @@ description: A progressive 3-year high adventure journey. Build skills, leadersh
   <p>Each year increases physical, technical, and leadership demands.</p>
 
   <div class="benefits">
-    <div class="benefit">
+    <a href="/roadmap#2027" class="benefit">
       <div class="benefit-icon">🛶</div>
       <h3>2027 — Northern Tier</h3>
       <p>7-Night Canoe Trek in Minnesota's Boundary Waters. Build foundational paddling and teamwork skills.</p>
-      <p><strong>$1,600–$2,100</strong></p>
-    </div>
+      <p class="cost-badge">$1,600–$2,100</p>
+    </a>
 
-    <div class="benefit">
+    <a href="/roadmap#2028" class="benefit">
       <div class="benefit-icon">🏔️</div>
       <h3>2028 — Philmont</h3>
       <p>12-Day Backpacking Trek through New Mexico's Sangre de Cristo Mountains. High altitude endurance challenge.</p>
-      <p><strong>$3,000–$3,800</strong></p>
-    </div>
+      <p class="cost-badge">$3,000–$3,800</p>
+    </a>
 
-    <div class="benefit">
+    <a href="/roadmap#2029" class="benefit">
       <div class="benefit-icon">🌄</div>
       <h3>2029 — Youth Expedition</h3>
       <p>8-Day custom expedition planned and led by youth. Full ownership of logistics and route.</p>
-      <p><strong>$1,200–$2,000</strong></p>
+      <p class="cost-badge">$1,200–$2,000</p>
+    </a>
+  </div>
+</section>
+
+<section class="overview">
+  <h2>Quick Cost Estimator</h2>
+  <div class="cost-estimator">
+    <div class="form-group">
+      <label for="cost-year">Select Year</label>
+      <select id="cost-year">
+        <option value="2027">2027 — Northern Tier</option>
+        <option value="2028">2028 — Philmont</option>
+        <option value="2029">2029 — Youth Expedition</option>
+      </select>
     </div>
+    <div class="form-group">
+      <label for="cost-fundraising">Fundraising Goal ($)</label>
+      <input type="number" id="cost-fundraising" value="0" min="0" step="100" placeholder="0">
+    </div>
+    <div class="cost-result">
+      <p>Estimated Total: <strong id="estimated-total">$1,800</strong></p>
+      <p class="cost-note">Payment plan: <span id="payment-amount">$225/month</span> × 8 months</p>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <h2>How It Works</h2>
+
+  <div class="step">
+    <h3>📋 Express Interest</h3>
+    <p>Take the survey to let us know you're interested and share your preferences.</p>
+    <a href="/survey">Take the Survey →</a>
+  </div>
+
+  <div class="step">
+    <h3>🏋️ Get Training</h3>
+    <p>Join monthly conditioning hikes and skill workshops. Check the <a href="/training">training page</a> for the schedule.</p>
+  </div>
+
+  <div class="step">
+    <h3>📚 Prepare</h3>
+    <p>Complete requirements, gather gear, and raise funds for your expedition.</p>
+  </div>
+
+  <div class="step">
+    <h3>🎒 Go on the Trip</h3>
+    <p>Put your skills to the test on the annual expedition!</p>
   </div>
 </section>
 
 <section class="overview">
   <h2>Program Vision</h2>
-  <p>Our goal is to build a sustainable annual high adventure culture that develops:</p>
+  <p>Build a sustainable annual high adventure culture that develops:</p>
 
   <div class="benefits">
     <div class="benefit">
@@ -65,57 +137,168 @@ description: A progressive 3-year high adventure journey. Build skills, leadersh
   </div>
 </section>
 
-<section class="steps">
-  <h2>How It Works</h2>
-
-  <div class="step">
-    <h3>📋 Express Interest</h3>
-    <p>Take the survey to let us know you're interested and share your preferences.</p>
-    <a href="/survey">Take the Survey →</a>
-  </div>
-
-  <div class="step">
-    <h3>🏋️ Get Training</h3>
-    <p>Join monthly conditioning hikes and skill workshops starting in October.</p>
-  </div>
-
-  <div class="step">
-    <h3>🎒 Go on the Trip</h3>
-    <p>Put your skills to the test on the annual expedition.</p>
-  </div>
-</section>
-
-<section class="overview">
-  <h2>Governance & Standards</h2>
-
-  <div class="stack-overview">
-    <h3>Leadership Structure</h3>
-    <ul>
-      <li><strong>High Adventure Committee Chair:</strong> Adult leader oversight</li>
-      <li><strong>Trek Advisors:</strong> 2–4 adults per crew</li>
-      <li><strong>Youth Trek Leader & Assistant:</strong> Youth leadership</li>
-      <li><strong>Specialists:</strong> Quartermaster, Navigator, Medical Lead</li>
-    </ul>
-
-    <h3>Financial Planning</h3>
-    <ul>
-      <li>Monthly payment schedules aligned to deposits</li>
-      <li>Troop-wide fundraising cycles</li>
-      <li>Optional individual scout accounts</li>
-      <li>Built-in contingency planning</li>
-    </ul>
-
-    <h3>Risk Management</h3>
-    <ul>
-      <li>Medical form compliance (Parts A/B/C)</li>
-      <li>Adult leader wilderness training</li>
-      <li>Emergency communication plans</li>
-      <li>Gear inspections and safety reviews</li>
-    </ul>
-  </div>
-</section>
-
 <section class="cta">
   <h2>Start Your Adventure</h2>
   <p>Contact Scoutmaster Sam Holt or the high adventure committee to learn more.</p>
 </section>
+
+<script>
+// Countdown Timer
+const expeditionDate = new Date('2027-06-15T00:00:00');
+
+function updateCountdown() {
+  const now = new Date();
+  const diff = expeditionDate - now;
+
+  if (diff <= 0) {
+    document.getElementById('days').textContent = '0';
+    document.getElementById('hours').textContent = '0';
+    document.getElementById('minutes').textContent = '0';
+    document.getElementById('seconds').textContent = '0';
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById('days').textContent = days;
+  document.getElementById('hours').textContent = hours;
+  document.getElementById('minutes').textContent = minutes;
+  document.getElementById('seconds').textContent = seconds;
+}
+
+// Cost Estimator
+const costs = {
+  '2027': { min: 1600, max: 2100, months: 8 },
+  '2028': { min: 3000, max: 3800, months: 10 },
+  '2029': { min: 1200, max: 2000, months: 10 }
+};
+
+function updateCostEstimator() {
+  const year = document.getElementById('cost-year').value;
+  const fundraising = parseInt(document.getElementById('cost-fundraising').value) || 0;
+  const cost = costs[year];
+
+  const avgCost = (cost.min + cost.max) / 2;
+  const afterFundraising = Math.max(0, avgCost - fundraising);
+  const monthly = afterFundraising / cost.months;
+
+  document.getElementById('estimated-total').textContent = '$' + afterFundraising.toLocaleString();
+  document.getElementById('payment-amount').textContent = '$' + Math.round(monthly);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+  updateCostEstimator();
+
+  document.getElementById('cost-year').addEventListener('change', updateCostEstimator);
+  document.getElementById('cost-fundraising').addEventListener('input', updateCostEstimator);
+});
+</script>
+
+<style>
+  .countdown-widget {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-8);
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .countdown-widget h2 {
+    margin-bottom: var(--space-6);
+  }
+
+  .countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-6);
+    margin-bottom: var(--space-4);
+  }
+
+  .countdown-item {
+    background: var(--color-bg-tertiary);
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--border-radius);
+    min-width: 80px;
+  }
+
+  .countdown-value {
+    display: block;
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    font-family: var(--font-mono);
+  }
+
+  .countdown-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+
+  .countdown-subtitle {
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .cost-estimator {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-6);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .cost-result {
+    background: var(--color-bg-tertiary);
+    padding: var(--space-4);
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-top: var(--space-4);
+  }
+
+  .cost-result p {
+    margin: 0;
+  }
+
+  .cost-note {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--space-2) !important;
+  }
+
+  .cost-badge {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    margin-top: var(--space-4);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-4);
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+  }
+
+  .form-group select,
+  .form-group input {
+    width: 100%;
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background: var(--color-bg-secondary);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+  }
+</style>
