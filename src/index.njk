@@ -97,53 +97,6 @@ description: A progressive 3-year high adventure journey. Build skills, leadersh
 </section>
 
 <section class="overview">
-  <h2>Quick Cost Estimator</h2>
-  <div class="cost-estimator">
-    <div class="form-group">
-      <label for="cost-year">Select Year</label>
-      <select id="cost-year">
-        <option value="2027">2027 — Northern Tier</option>
-        <option value="2028">2028 — Philmont</option>
-        <option value="2029">2029 — Youth Expedition</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="cost-fundraising">Fundraising Goal ($)</label>
-      <input type="number" id="cost-fundraising" value="0" min="0" step="100" placeholder="0">
-    </div>
-    <div class="cost-result">
-      <p>Estimated Total: <strong id="estimated-total">$1,800</strong></p>
-      <p class="cost-note">Payment plan: <span id="payment-amount">$225/month</span> × 8 months</p>
-    </div>
-  </div>
-</section>
-
-<section class="steps">
-  <h2>How It Works</h2>
-
-  <div class="step">
-    <h3>📋 Express Interest</h3>
-    <p>Take the survey to let us know you're interested and share your preferences.</p>
-    <a href="/survey">Take the Survey →</a>
-  </div>
-
-  <div class="step">
-    <h3>🏋️ Get Training</h3>
-    <p>Join monthly conditioning hikes and skill workshops. Check the <a href="/training">training page</a> for the schedule.</p>
-  </div>
-
-  <div class="step">
-    <h3>📚 Prepare</h3>
-    <p>Complete requirements, gather gear, and raise funds for your expedition.</p>
-  </div>
-
-  <div class="step">
-    <h3>🎒 Go on the Trip</h3>
-    <p>Put your skills to the test on the annual expedition!</p>
-  </div>
-</section>
-
-<section class="overview">
   <h2>Program Vision</h2>
   <p>Build a sustainable annual high adventure culture that develops:</p>
 
@@ -199,33 +152,9 @@ function updateCountdown() {
   document.getElementById('seconds').textContent = seconds;
 }
 
-// Cost Estimator
-const costs = {
-  '2027': { min: 1600, max: 2100, months: 8 },
-  '2028': { min: 3000, max: 3800, months: 10 },
-  '2029': { min: 1200, max: 2000, months: 10 }
-};
-
-function updateCostEstimator() {
-  const year = document.getElementById('cost-year').value;
-  const fundraising = parseInt(document.getElementById('cost-fundraising').value) || 0;
-  const cost = costs[year];
-
-  const avgCost = (cost.min + cost.max) / 2;
-  const afterFundraising = Math.max(0, avgCost - fundraising);
-  const monthly = afterFundraising / cost.months;
-
-  document.getElementById('estimated-total').textContent = '$' + afterFundraising.toLocaleString();
-  document.getElementById('payment-amount').textContent = '$' + Math.round(monthly);
-}
-
 document.addEventListener('DOMContentLoaded', function() {
   updateCountdown();
   setInterval(updateCountdown, 1000);
-  updateCostEstimator();
-
-  document.getElementById('cost-year').addEventListener('change', updateCostEstimator);
-  document.getElementById('cost-fundraising').addEventListener('input', updateCostEstimator);
 });
 </script>
 
@@ -275,33 +204,6 @@ document.addEventListener('DOMContentLoaded', function() {
     margin: 0;
   }
 
-  .cost-estimator {
-    background: var(--color-bg-card);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius-lg);
-    padding: var(--space-6);
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .cost-result {
-    background: var(--color-bg-tertiary);
-    padding: var(--space-4);
-    border-radius: var(--border-radius);
-    text-align: center;
-    margin-top: var(--space-4);
-  }
-
-  .cost-result p {
-    margin: 0;
-  }
-
-  .cost-note {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-muted);
-    margin-top: var(--space-2) !important;
-  }
-
   .cost-badge {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -309,27 +211,6 @@ document.addEventListener('DOMContentLoaded', function() {
     background-clip: text;
     font-weight: 700;
     margin-top: var(--space-4);
-  }
-
-  .form-group {
-    margin-bottom: var(--space-4);
-  }
-
-  .form-group label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: var(--space-2);
-  }
-
-  .form-group select,
-  .form-group input {
-    width: 100%;
-    padding: var(--space-3);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    background: var(--color-bg-secondary);
-    color: var(--color-text);
-    font-size: var(--font-size-base);
   }
 
   .upcoming-trip {
