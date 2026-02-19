@@ -6,10 +6,33 @@ description: A progressive 3-year high adventure journey. Build skills, leadersh
 
 <section class="hero">
   <h1>Troop 69 High Adventure Program</h1>
-  <p class="lead">Build endurance, wilderness skills, and leadership through our progressive 3-year adventure program.</p>
+  <p class="lead">Build endurance, wilderness skills, and leadership through our progressive adventure program.</p>
   <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
     <a href="/roadmap" class="btn btn-primary">View the Roadmap →</a>
     <a href="/survey" class="btn btn-secondary">Take the Survey</a>
+  </div>
+</section>
+
+<section class="overview">
+  <div class="upcoming-trip">
+    <div class="upcoming-trip-badge">UPCOMING TRIP</div>
+    <h2>🌴 Florida Sea Base</h2>
+    <p class="upcoming-trip-dates">July 12–17, 2026</p>
+    <p class="upcoming-trip-desc">6-Day tropical adventure in the Florida Keys! Scuba, sailing, and island camping await.</p>
+    <div class="upcoming-trip-details">
+      <div class="trip-detail">
+        <span class="trip-detail-label">Focus</span>
+        <span class="trip-detail-value">Scuba, Sailing, Snorkeling</span>
+      </div>
+      <div class="trip-detail">
+        <span class="trip-detail-label">Cost</span>
+        <span class="trip-detail-value">~$600–$800</span>
+      </div>
+      <div class="trip-detail">
+        <span class="trip-detail-label">Participants</span>
+        <span class="trip-detail-value">Open to qualified scouts</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -34,15 +57,22 @@ description: A progressive 3-year high adventure journey. Build skills, leadersh
         <span class="countdown-label">Seconds</span>
       </div>
     </div>
-    <p class="countdown-subtitle" id="countdown-title">2027 Northern Tier Expedition</p>
+    <p class="countdown-subtitle" id="countdown-title">Sea Base 2026</p>
   </div>
 </section>
 
 <section class="overview">
-  <h2>Our 3-Year Adventure Ladder</h2>
-  <p>Each year increases physical, technical, and leadership demands.</p>
+  <h2>Our Adventure Program</h2>
+  <p>A progressive program building skills and leadership for scouts of all experience levels.</p>
 
   <div class="benefits">
+    <a href="/bases/#sea-base" class="benefit">
+      <div class="benefit-icon">🌴</div>
+      <h3>2026 — Sea Base</h3>
+      <p>July 12–17, 2026. Tropical adventure in the Florida Keys. Scuba, sailing, and island camping.</p>
+      <p class="cost-badge">$600–$800</p>
+    </a>
+
     <a href="/roadmap#2027" class="benefit">
       <div class="benefit-icon">🛶</div>
       <h3>2027 — Northern Tier</h3>
@@ -144,7 +174,7 @@ description: A progressive 3-year high adventure journey. Build skills, leadersh
 
 <script>
 // Countdown Timer
-const expeditionDate = new Date('2027-06-15T00:00:00');
+const expeditionDate = new Date('2026-07-12T00:00:00');
 
 function updateCountdown() {
   const now = new Date();
@@ -300,5 +330,69 @@ document.addEventListener('DOMContentLoaded', function() {
     background: var(--color-bg-secondary);
     color: var(--color-text);
     font-size: var(--font-size-base);
+  }
+
+  .upcoming-trip {
+    background: linear-gradient(135deg, rgba(224, 112, 0, 0.15) 0%, rgba(91, 194, 231, 0.15) 100%);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--border-radius-xl);
+    padding: var(--space-8);
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .upcoming-trip-badge {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    padding: var(--space-1) var(--space-4);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-4);
+  }
+
+  .upcoming-trip h2 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-2);
+  }
+
+  .upcoming-trip-dates {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .upcoming-trip-desc {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-6);
+  }
+
+  .upcoming-trip-details {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .trip-detail {
+    text-align: center;
+  }
+
+  .trip-detail-label {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-1);
+  }
+
+  .trip-detail-value {
+    font-weight: 600;
+    color: var(--color-text);
   }
 </style>
