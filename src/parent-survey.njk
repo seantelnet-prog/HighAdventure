@@ -27,16 +27,6 @@ description: Parents, share your feedback on the Troop 69 High Adventure program
       <input type="text" id="scout_name" name="scout_name" placeholder="Name of your scout(s) in Troop 69" required>
     </div>
 
-    <div class="form-group">
-      <label for="email">Email *</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="form-group">
-      <label for="phone">Phone (optional)</label>
-      <input type="tel" id="phone" name="phone" placeholder="For trip coordination">
-    </div>
-
     <hr>
 
     <h3>🚗 Trip Transportation</h3>
@@ -95,83 +85,17 @@ description: Parents, share your feedback on the Troop 69 High Adventure program
 
     <hr>
 
-    <h3>💰 Trip Pricing Feedback</h3>
-
-    <p class="help-text">We're planning trips at different price points. Please let us know your interest level at each range:</p>
+    <h3>💰 Cost Considerations</h3>
 
     <div class="form-group">
-      <label>2027 Trip (Northern Tier - Canoeing) — Estimated $1,600–$2,100 *</label>
-      <select id="price_2027" name="price_2027" required>
+      <label>How big a factor is cost in deciding whether your scout can do a trip? *</label>
+      <select id="cost_factor" name="cost_factor" required>
         <option value="">Select...</option>
-        <option value="Very Interested">Very Interested</option>
-        <option value="Somewhat Interested">Somewhat Interested</option>
-        <option value="Might consider">Might consider</option>
-        <option value="Not interested at this price">Not interested at this price</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>If the 2027 trip were cheaper (~$1,200), would you be more interested? *</label>
-      <select id="price_2027_cheaper" name="price_2027_cheaper" required>
-        <option value="">Select...</option>
-        <option value="Yes - much more interested">Yes - much more interested</option>
-        <option value="Yes - somewhat more interested">Yes - somewhat more interested</option>
-        <option value="No - price doesn't change my interest">No - price doesn't change my interest</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>If the 2027 trip were more expensive (~$2,500), would you still go? *</label>
-      <select id="price_2027_more" name="price_2027_more" required>
-        <option value="">Select...</option>
-        <option value="Yes - still interested">Yes - still interested</option>
-        <option value="Maybe - depends on what's included">Maybe - depends on what's included</option>
-        <option value="No - would need to reconsider">No - would need to reconsider</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>2028 Trip (Philmont - Backpacking) — Estimated $3,000–$3,800 *</label>
-      <select id="price_2028" name="price_2028" required>
-        <option value="">Select...</option>
-        <option value="Very Interested">Very Interested</option>
-        <option value="Somewhat Interested">Somewhat Interested</option>
-        <option value="Might consider">Might consider</option>
-        <option value="Not interested at this price">Not interested at this price</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>If the 2028 trip were cheaper (~$2,200), would you be more interested? *</label>
-      <select id="price_2028_cheaper" name="price_2028_cheaper" required>
-        <option value="">Select...</option>
-        <option value="Yes - much more interested">Yes - much more interested</option>
-        <option value="Yes - somewhat more interested">Yes - somewhat more interested</option>
-        <option value="No - price doesn't change my interest">No - price doesn't change my interest</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>If the 2028 trip were more expensive (~$4,500), would you still go? *</label>
-      <select id="price_2028_more" name="price_2028_more" required>
-        <option value="">Select...</option>
-        <option value="Yes - still interested">Yes - still interested</option>
-        <option value="Maybe - depends on what's included">Maybe - depends on what's included</option>
-        <option value="No - would need to reconsider">No - would need to reconsider</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="budget_range">What price range works best for your family? *</label>
-      <select id="budget_range" name="budget_range" required>
-        <option value="">Select...</option>
-        <option value="Under $1,000">Under $1,000</option>
-        <option value="$1,000 - $1,500">$1,000 - $1,500</option>
-        <option value="$1,500 - $2,000">$1,500 - $2,000</option>
-        <option value="$2,000 - $2,500">$2,000 - $2,500</option>
-        <option value="$2,500 - $3,000">$2,500 - $3,000</option>
-        <option value="$3,000 - $4,000">$3,000 - $4,000</option>
-        <option value="$4,000+">$4,000+ (no limit)</option>
+        <option value="Major factor">Major factor - cost determines whether we can go</option>
+        <option value="Significant factor">Significant factor - cost heavily influences our decision</option>
+        <option value="Moderate factor">Moderate factor - we consider cost but it's not the main driver</option>
+        <option value="Minor factor">Minor factor - cost is not a major concern</option>
+        <option value="Not a factor">Not a factor at all - we'll go regardless of cost</option>
       </select>
     </div>
 
