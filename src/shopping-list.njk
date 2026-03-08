@@ -1,0 +1,121 @@
+---
+layout: base.njk
+title: Shopping List Template - Backcountry Cooking
+description: Printable shopping list for backpacking trips.
+---
+
+<section class="hero">
+  <h1>Shopping List Template</h1>
+  <p class="lead">Print this checklist for your next grocery run.</p>
+</section>
+
+<section class="overview">
+  <h2>🥣 Breakfast Items</h2>
+  <ul>
+    <li><input type="checkbox"> Oatmeal / instant oatmeal packets</li>
+    <li><input type="checkbox"> Freeze-dried eggs</li>
+    <li><input type="checkbox"> Pancake mix</li>
+    <li><input type="checkbox"> Powdered milk</li>
+    <li><input type="checkbox"> Butter (or butter substitute)</li>
+    <li><input type="checkbox"> Syrup / honey</li>
+    <li><input type="checkbox"> Dried fruit (raisins, cranberries)</li>
+    <li><input type="checkbox"> Brown sugar / maple sugar</li>
+    <li><input type="checkbox"> Coffee / tea / hot cocoa</li>
+    <li><input type="checkbox"> Granola / cold cereal</li>
+  </ul>
+
+  <h2>🥪 Lunch & Snacks</h2>
+  <ul>
+    <li><input type="checkbox"> Tortillas</li>
+    <li><input type="checkbox"> Bread (for day 1)</li>
+    <li><input type="checkbox"> Peanut butter</li>
+    <li><input type="checkbox"> Jelly / honey</li>
+    <li><input type="checkbox"> Cheese (hard varieties)</li>
+    <li><input type="checkbox"> Summer sausage / pepperoni</li>
+    <li><input type="checkbox"> Trail mix / GORP</li>
+    <li><input type="checkbox"> Energy bars</li>
+    <li><input type="checkbox"> Nuts (almonds, peanuts)</li>
+    <li><input type="checkbox"> Dried meat (jerky)</li>
+    <li><input type="checkbox"> Crackers</li>
+    <li><input type="checkbox"> Fruit leather</li>
+  </ul>
+
+  <h2>🍲 Dinner Items</h2>
+  <ul>
+    <li><input type="checkbox"> Instant pasta / rice dishes</li>
+    <li><input type="checkbox"> Freeze-dried meals</li>
+    <li><input type="checkbox"> Instant mashed potatoes</li>
+    <li><input type="checkbox"> Dehydrated vegetables</li>
+    <li><input type="checkbox"> Taco seasoning</li>
+    <li><input type="checkbox"> Refried beans (instant)</li>
+    <li><input type="checkbox"> Tomato sauce / salsa</li>
+    <li><input type="checkbox"> Parmesan cheese (shelf-stable)</li>
+    <li><input type="checkbox"> Olive oil / vegetable oil</li>
+    <li><input type="checkbox"> Soy sauce / hot sauce</li>
+    <li><input type="checkbox"> Bouillon cubes / instant broth</li>
+  </ul>
+
+  <h2>🥫 Essential Extras</h2>
+  <ul>
+    <li><input type="checkbox"> Instant drink mixes (Gatorade, lemonade)</li>
+    <li><input type="checkbox"> Electrolyte tablets</li>
+    <li><input type="checkbox"> Marshmallows</li>
+    <li><input type="checkbox"> Graham crackers / chocolate (s'mores)</li>
+    <li><input type="checkbox"> Instant coffee</li>
+    <li><input type="checkbox"> Tea bags</li>
+    <li><input type="checkbox"> Hot cocoa mix</li>
+    <li><input type="checkbox"> Powdered lemonade</li>
+  </ul>
+
+  <h2>🧴 Cooking Supplies</h2>
+  <ul>
+    <li><input type="checkbox"> Fuel canisters</li>
+    <li><input type="checkbox"> Lighter / matches</li>
+    <li><input type="checkbox"> Pot scrubber</li>
+    <li><input type="checkbox"> Dish soap</li>
+    <li><input type="checkbox"> Ziplock bags (gallon & quart)</li>
+    <li><input type="checkbox"> Trash bags</li>
+    <li><input type="checkbox"> Paper towels</li>
+    <li><input type="checkbox"> Sponges</li>
+    <li><input type="checkbox"> Utensils (spoons, ladle)</li>
+    <li><input type="checkbox"> Can opener</li>
+    <li><input type="checkbox"> Bowl / mug per person</li>
+  </ul>
+
+  <h2>📝 Notes</h2>
+  <div style="border: 1px solid var(--color-border); border-radius: 6px; padding: 1rem; min-height: 100px;">
+    <p>_______________________________________</p>
+    <p>_______________________________________</p>
+    <p>_______________________________________</p>
+  </div>
+</section>
+
+<style>
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0.5rem;
+  }
+
+  li {
+    padding: 0.5rem;
+    background: var(--color-bg-offset, #f5f5f5);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    border-bottom: 2px solid var(--color-primary, #2c5f2d);
+    padding-bottom: 0.5rem;
+  }
+</style>
